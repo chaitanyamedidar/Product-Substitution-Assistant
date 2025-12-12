@@ -8,7 +8,7 @@ A Streamlit web application that suggests alternative products when requested it
 
 ## 📋 Table of Contents
 
-- [Overview](##overview)
+- [Overview](#Overview)
 - [Knowledge Graph Design](#knowledge-graph-design)
 - [Search Algorithm](#search-algorithm)
 - [Rule-Based Explanations](#rule-based-explanations)

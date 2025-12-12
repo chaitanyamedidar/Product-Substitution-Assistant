@@ -181,7 +181,7 @@ with st.sidebar:
     4. Ranks alternatives using a scoring algorithm
     5. Provides rule-based explanations
     
-    **No ML or LLMs used** - pure classical AI reasoning!
+    
     """)
     
     st.divider()

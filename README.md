@@ -4,7 +4,7 @@ A Streamlit web application that suggests alternative products when requested it
 
 ## 🌐 Live Demo
 
-**Deployed App:** [(https://appuct-substitution-assistant-uedxypcm2cpexpqmlexyk9.streamlit.app/)]
+**Deployed App:** https://appuct-substitution-assistant-uedxypcm2cpexpqmlexyk9.streamlit.app/
 
 ## 📋 Table of Contents
 

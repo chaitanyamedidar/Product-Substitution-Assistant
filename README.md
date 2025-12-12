@@ -12,7 +12,7 @@ A Streamlit web application that suggests alternative products when requested it
 - [Knowledge Graph Design](#knowledge-graph-design)
 - [Search Algorithm](#search-algorithm)
 - [Rule-Based Explanations](#rule-based-explanations)
-- [Local Setup](#local-setup)
+- [Local Setup](#Local-Setup)
 - [Usage](#usage)
 - [Project Structure](#project-structure)
 - [Technical Details](#technical-details)

@@ -8,15 +8,16 @@ A Streamlit web application that suggests alternative products when requested it
 
 ## 📋 Table of Contents
 
-- [Overview](#Overview)
+- [Overview](#overview)
 - [Knowledge Graph Design](#knowledge-graph-design)
 - [Search Algorithm](#search-algorithm)
 - [Rule-Based Explanations](#rule-based-explanations)
-- [Local Setup](#Local-Setup)
+- [Local Setup](#local-setup)
 - [Usage](#usage)
 - [Project Structure](#project-structure)
 - [Technical Details](#technical-details)
 
+<a name="overview"></a>
 ## 🎯 Overview
 
 This application helps shopkeepers suggest alternative products to customers when their requested item is unavailable. It uses:

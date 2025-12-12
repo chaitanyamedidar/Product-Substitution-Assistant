@@ -26,7 +26,7 @@ This application helps shopkeepers suggest alternative products to customers whe
 - **Graph Traversal**: BFS-based search to find similar products
 - **Rule-Based Reasoning**: Explicit rules for filtering, scoring, and explaining suggestions
 - **No ML/AI Models**: Pure classical AI approach with transparent logic
-
+<a name="Knowledge Graph Design"></a>
 ## 🧠 Knowledge Graph Design
 
 ### Node Types
@@ -93,7 +93,7 @@ Categories (Hierarchical)
         - Spices
         - Cooking Oil
 ```
-
+<a name="overview"></a>
 ## 🔍 Search Algorithm
 
 ### Approach: Modified BFS with Scoring

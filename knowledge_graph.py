@@ -11,6 +11,7 @@ class KnowledgeGraph:
         self.category_hierarchy = data['category_hierarchy']
         self.similar_categories = data['similar_categories']
         
+        # Build reverse index: category -> product IDs
         self.products_by_category = {}
         for product_id, product in self.products.items():
             category = product['category']
@@ -34,6 +35,7 @@ class KnowledgeGraph:
         return self.products_by_category.get(category, [])
     
     def get_similar_categories(self, category):
+        # Find categories marked as similar (e.g., Milk <-> Plant-Based Milk)
         similar = []
         for cat_pair in self.similar_categories:
             if category in cat_pair:
@@ -41,12 +43,14 @@ class KnowledgeGraph:
         return similar
     
     def get_parent_category(self, category):
+        # Find parent in hierarchy (e.g., Milk -> Dairy)
         for parent, children in self.category_hierarchy.items():
             if category in children:
                 return parent
         return None
     
     def get_sibling_categories(self, category):
+        # Find categories with same parent
         parent = self.get_parent_category(category)
         if parent:
             siblings = self.category_hierarchy[parent]

@@ -1,10 +1,12 @@
 class RuleExplainer:
     
     def generate_explanation(self, alternative, requested_product, preferred_brand=None):
+        # Generate human-readable explanation based on predefined rules
         product = alternative['product']
         source = alternative['source']
         explanation_parts = []
         
+        # Rule: Category relationship
         if source == 'same_category':
             if product['brand'] == requested_product['brand']:
                 explanation_parts.append("✓ Same category, same brand")
@@ -18,6 +20,7 @@ class RuleExplainer:
         elif source == 'sibling_category':
             explanation_parts.append("✓ Related category")
         
+        # Rule: Attribute matching
         requested_attrs = set(requested_product['attributes'])
         product_attrs = set(product['attributes'])
         common_attrs = requested_attrs.intersection(product_attrs)
@@ -25,6 +28,7 @@ class RuleExplainer:
         if common_attrs == requested_attrs and len(requested_attrs) > 0:
             explanation_parts.append("✓ Matches all original attributes")
         
+        # Rule: Price comparison
         if product['price'] < requested_product['price']:
             savings = requested_product['price'] - product['price']
             explanation_parts.append(f"✓ Cheaper option (₹{savings} less)")
@@ -34,9 +38,11 @@ class RuleExplainer:
         else:
             explanation_parts.append("✓ Same price point")
         
+        # Rule: Brand preference
         if preferred_brand and product['brand'] == preferred_brand:
             explanation_parts.append("✓ Matches your preferred brand")
         
+        # Rule: Special attributes
         special_attrs = product_attrs - requested_attrs
         if 'lactose_free' in special_attrs:
             explanation_parts.append("✓ Lactose-free option")
@@ -50,6 +56,7 @@ class RuleExplainer:
         return " | ".join(explanation_parts)
     
     def get_rule_tags(self, alternative, requested_product, preferred_brand=None):
+        # Return machine-readable rule tags for transparency
         product = alternative['product']
         source = alternative['source']
         tags = []

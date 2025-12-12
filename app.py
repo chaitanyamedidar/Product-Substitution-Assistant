@@ -10,6 +10,7 @@ st.set_page_config(
     layout="wide"
 )
 
+# Load KG and search components (cached for performance)
 @st.cache_resource
 def load_system():
     kg = KnowledgeGraph('products.json')
@@ -21,6 +22,7 @@ def load_system():
 kg, search_engine, explainer = load_system()
 
 
+# UI Layout
 st.title("🛒 Shopkeeper Product Substitution Assistant")
 st.markdown("Find alternative products when your requested item is out of stock")
 
@@ -52,6 +54,7 @@ with col2:
     if max_price == 0:
         max_price = None
 
+# Required attributes
 st.subheader("Required Attributes")
 col3, col4, col5, col6 = st.columns(4)
 
@@ -74,6 +77,7 @@ if sugar_free:
 if gluten_free:
     required_tags.append('gluten_free')
 
+# Optional brand preference
 preferred_brand = st.text_input(
     "Preferred Brand (optional)",
     placeholder="e.g., Amul, Britannia",
@@ -85,6 +89,7 @@ if not preferred_brand:
 
 st.divider()
 
+# Search execution
 if st.button("🔍 Find Alternatives", type="primary", use_container_width=True):
     
     with st.spinner("Searching for alternatives..."):
@@ -97,6 +102,7 @@ if st.button("🔍 Find Alternatives", type="primary", use_container_width=True)
     
     st.divider()
     
+    # Case 1: Product in stock
     if 'exact_match' in result:
         product = result['exact_match']
         st.success("✅ Product is available!")
@@ -112,6 +118,7 @@ if st.button("🔍 Find Alternatives", type="primary", use_container_width=True)
         if product['attributes']:
             st.write("**Attributes:**", ", ".join(product['attributes']))
     
+    # Case 2: Product out of stock - show alternatives
     elif 'alternatives' in result:
         requested = result['requested_product']
         alternatives = result['alternatives']
@@ -139,6 +146,7 @@ if st.button("🔍 Find Alternatives", type="primary", use_container_width=True)
                     if product['attributes']:
                         st.write("**Attributes:**", ", ".join(product['attributes']))
                     
+                    # Generate rule-based explanation
                     explanation = explainer.generate_explanation(
                         alt, 
                         requested, 
@@ -146,6 +154,7 @@ if st.button("🔍 Find Alternatives", type="primary", use_container_width=True)
                     )
                     st.info(f"**Why this suggestion?**\n\n{explanation}")
                     
+                    # Show technical rule tags
                     rule_tags = explainer.get_rule_tags(alt, requested, preferred_brand)
                     with st.expander("🔍 View Rule Tags (Technical)"):
                         st.code(", ".join(rule_tags))
@@ -154,10 +163,12 @@ if st.button("🔍 Find Alternatives", type="primary", use_container_width=True)
             st.error("❌ No alternatives found matching your criteria")
             st.write("Try relaxing some filters (price limit or required attributes)")
     
+    # Case 3: Error
     elif 'error' in result:
         st.error(f"❌ {result['error']}")
 
 
+# Sidebar information
 with st.sidebar:
     st.header("ℹ️ About")
     st.write("""

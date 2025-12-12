@@ -26,7 +26,7 @@ This application helps shopkeepers suggest alternative products to customers whe
 - **Graph Traversal**: BFS-based search to find similar products
 - **Rule-Based Reasoning**: Explicit rules for filtering, scoring, and explaining suggestions
 - **No ML/AI Models**: Pure classical AI approach with transparent logic
-<a name="Knowledge Graph Design"></a>
+<a name="knowledge-graph-design"></a>
 ## 🧠 Knowledge Graph Design
 
 ### Node Types
@@ -93,7 +93,7 @@ Categories (Hierarchical)
         - Spices
         - Cooking Oil
 ```
-<a name="overview"></a>
+<a name="search-algorithm"></a>
 ## 🔍 Search Algorithm
 
 ### Approach: Modified BFS with Scoring
@@ -138,9 +138,9 @@ def find_alternatives(requested_product):
 
 Apply mandatory filters to remove invalid candidates:
 
-- ✅ **In Stock**: Must be available
-- ✅ **Price Limit**: Must be ≤ max_price (if specified)
-- ✅ **Required Tags**: Must have ALL required attributes
+- **In Stock**: Must be available
+- **Price Limit**: Must be ≤ max_price (if specified)
+- **Required Tags**: Must have ALL required attributes
 
 #### 3. **Scoring** (Ranking)
 
@@ -214,7 +214,7 @@ Each suggestion includes a **transparent, rule-based explanation** derived from 
 ```
 
 **Rule Tags:** `same_category_diff_brand`, `all_required_tags_matched`, `cheaper_option`
-
+<a name="local-setup"></a>
 ## 🚀 Local Setup
 
 ### Prerequisites
@@ -243,7 +243,7 @@ Each suggestion includes a **transparent, rule-based explanation** derived from 
 4. **Open in browser**
    - The app will automatically open at `http://localhost:8501`
    - If not, manually navigate to the URL shown in terminal
-
+<a name="usage"></a>
 ## 💡 Usage
 
 ### Step-by-Step Guide
@@ -284,7 +284,7 @@ Each suggestion includes a **transparent, rule-based explanation** derived from 
 - Product: "Mother Dairy Milk (1L)" (out of stock)
 - Required: Lactose Free
 - Result: Suggests "Epigamia Almond Milk", "Goodmylk Soy Milk"
-
+<a name="project-structure"></a>
 ## 📁 Project Structure
 
 ```
@@ -342,25 +342,14 @@ Products are stored in JSON format:
 4. **Rule Engine**: Template-based explanations
    - Each rule has clear trigger conditions
    - No random or generated text
-
+<a name="dataset"></a>
 ## 📊 Dataset
 
 - **50 Products** across 6 major categories
 - **Realistic Indian grocery items** (Amul, Britannia, Haldiram, etc.)
 - **Multiple attributes** (veg_only, lactose_free, sugar_free, gluten_free)
 - **Varied price range**: ₹10 - ₹250
-
-## 🎓 Assignment Compliance
-
-✅ Knowledge Graph implementation (not flat lists)  
-✅ Graph-based search (BFS traversal)  
-✅ Rule-based explanations (explicit rules)  
-✅ Streamlit UI with all required inputs  
-✅ Constraint handling (price, tags, stock, brand)  
-✅ No ML/LLMs/embeddings used  
-✅ Clean, commented, organized code  
-✅ Comprehensive documentation  
-
+ 
 ## 📄 License
 
 This project is created as an assignment submission.

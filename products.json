@@ -1,0 +1,620 @@
+{
+    "products": [
+        {
+            "id": "p1",
+            "name": "Amul Milk (1L)",
+            "category": "Milk",
+            "brand": "Amul",
+            "price": 60,
+            "in_stock": true,
+            "attributes": [
+                "veg_only"
+            ]
+        },
+        {
+            "id": "p2",
+            "name": "Mother Dairy Milk (1L)",
+            "category": "Milk",
+            "brand": "Mother Dairy",
+            "price": 58,
+            "in_stock": false,
+            "attributes": [
+                "veg_only"
+            ]
+        },
+        {
+            "id": "p3",
+            "name": "Amul Lactose-Free Milk (1L)",
+            "category": "Milk",
+            "brand": "Amul",
+            "price": 75,
+            "in_stock": true,
+            "attributes": [
+                "veg_only",
+                "lactose_free"
+            ]
+        },
+        {
+            "id": "p4",
+            "name": "Epigamia Almond Milk (1L)",
+            "category": "Plant-Based Milk",
+            "brand": "Epigamia",
+            "price": 150,
+            "in_stock": true,
+            "attributes": [
+                "veg_only",
+                "lactose_free"
+            ]
+        },
+        {
+            "id": "p5",
+            "name": "Goodmylk Soy Milk (1L)",
+            "category": "Plant-Based Milk",
+            "brand": "Goodmylk",
+            "price": 120,
+            "in_stock": true,
+            "attributes": [
+                "veg_only",
+                "lactose_free"
+            ]
+        },
+        {
+            "id": "p6",
+            "name": "Amul Butter (100g)",
+            "category": "Butter",
+            "brand": "Amul",
+            "price": 50,
+            "in_stock": true,
+            "attributes": [
+                "veg_only"
+            ]
+        },
+        {
+            "id": "p7",
+            "name": "Mother Dairy Butter (100g)",
+            "category": "Butter",
+            "brand": "Mother Dairy",
+            "price": 48,
+            "in_stock": true,
+            "attributes": [
+                "veg_only"
+            ]
+        },
+        {
+            "id": "p8",
+            "name": "Amul Cheese Slices (200g)",
+            "category": "Cheese",
+            "brand": "Amul",
+            "price": 120,
+            "in_stock": false,
+            "attributes": [
+                "veg_only"
+            ]
+        },
+        {
+            "id": "p9",
+            "name": "Britannia Cheese Slices (200g)",
+            "category": "Cheese",
+            "brand": "Britannia",
+            "price": 115,
+            "in_stock": true,
+            "attributes": [
+                "veg_only"
+            ]
+        },
+        {
+            "id": "p10",
+            "name": "Amul Curd (400g)",
+            "category": "Curd",
+            "brand": "Amul",
+            "price": 30,
+            "in_stock": true,
+            "attributes": [
+                "veg_only"
+            ]
+        },
+        {
+            "id": "p11",
+            "name": "Coca Cola (1L)",
+            "category": "Soft Drinks",
+            "brand": "Coca Cola",
+            "price": 40,
+            "in_stock": true,
+            "attributes": [
+                "veg_only"
+            ]
+        },
+        {
+            "id": "p12",
+            "name": "Pepsi (1L)",
+            "category": "Soft Drinks",
+            "brand": "Pepsi",
+            "price": 40,
+            "in_stock": false,
+            "attributes": [
+                "veg_only"
+            ]
+        },
+        {
+            "id": "p13",
+            "name": "Sprite (1L)",
+            "category": "Soft Drinks",
+            "brand": "Coca Cola",
+            "price": 40,
+            "in_stock": true,
+            "attributes": [
+                "veg_only"
+            ]
+        },
+        {
+            "id": "p14",
+            "name": "Real Juice Mango (1L)",
+            "category": "Juice",
+            "brand": "Dabur",
+            "price": 100,
+            "in_stock": true,
+            "attributes": [
+                "veg_only"
+            ]
+        },
+        {
+            "id": "p15",
+            "name": "Tropicana Orange Juice (1L)",
+            "category": "Juice",
+            "brand": "Tropicana",
+            "price": 120,
+            "in_stock": true,
+            "attributes": [
+                "veg_only"
+            ]
+        },
+        {
+            "id": "p16",
+            "name": "Paper Boat Aam Panna (250ml)",
+            "category": "Juice",
+            "brand": "Paper Boat",
+            "price": 30,
+            "in_stock": false,
+            "attributes": [
+                "veg_only",
+                "sugar_free"
+            ]
+        },
+        {
+            "id": "p17",
+            "name": "Lays Classic (50g)",
+            "category": "Chips",
+            "brand": "Lays",
+            "price": 20,
+            "in_stock": true,
+            "attributes": [
+                "veg_only"
+            ]
+        },
+        {
+            "id": "p18",
+            "name": "Bingo Mad Angles (50g)",
+            "category": "Chips",
+            "brand": "Bingo",
+            "price": 20,
+            "in_stock": false,
+            "attributes": [
+                "veg_only"
+            ]
+        },
+        {
+            "id": "p19",
+            "name": "Kurkure Masala Munch (50g)",
+            "category": "Chips",
+            "brand": "Kurkure",
+            "price": 20,
+            "in_stock": true,
+            "attributes": [
+                "veg_only"
+            ]
+        },
+        {
+            "id": "p20",
+            "name": "Haldiram Bhujia (200g)",
+            "category": "Namkeen",
+            "brand": "Haldiram",
+            "price": 50,
+            "in_stock": true,
+            "attributes": [
+                "veg_only"
+            ]
+        },
+        {
+            "id": "p21",
+            "name": "Bikaji Aloo Bhujia (200g)",
+            "category": "Namkeen",
+            "brand": "Bikaji",
+            "price": 45,
+            "in_stock": true,
+            "attributes": [
+                "veg_only"
+            ]
+        },
+        {
+            "id": "p22",
+            "name": "India Gate Basmati Rice (1kg)",
+            "category": "Rice",
+            "brand": "India Gate",
+            "price": 150,
+            "in_stock": true,
+            "attributes": [
+                "veg_only",
+                "gluten_free"
+            ]
+        },
+        {
+            "id": "p23",
+            "name": "Daawat Basmati Rice (1kg)",
+            "category": "Rice",
+            "brand": "Daawat",
+            "price": 160,
+            "in_stock": false,
+            "attributes": [
+                "veg_only",
+                "gluten_free"
+            ]
+        },
+        {
+            "id": "p24",
+            "name": "Fortune Sona Masoori Rice (1kg)",
+            "category": "Rice",
+            "brand": "Fortune",
+            "price": 80,
+            "in_stock": true,
+            "attributes": [
+                "veg_only",
+                "gluten_free"
+            ]
+        },
+        {
+            "id": "p25",
+            "name": "Aashirvaad Atta (5kg)",
+            "category": "Flour",
+            "brand": "Aashirvaad",
+            "price": 250,
+            "in_stock": true,
+            "attributes": [
+                "veg_only"
+            ]
+        },
+        {
+            "id": "p26",
+            "name": "Pillsbury Atta (5kg)",
+            "category": "Flour",
+            "brand": "Pillsbury",
+            "price": 240,
+            "in_stock": true,
+            "attributes": [
+                "veg_only"
+            ]
+        },
+        {
+            "id": "p27",
+            "name": "Maggi Noodles (70g)",
+            "category": "Instant Noodles",
+            "brand": "Maggi",
+            "price": 14,
+            "in_stock": false,
+            "attributes": [
+                "veg_only"
+            ]
+        },
+        {
+            "id": "p28",
+            "name": "Yippee Noodles (70g)",
+            "category": "Instant Noodles",
+            "brand": "Yippee",
+            "price": 12,
+            "in_stock": true,
+            "attributes": [
+                "veg_only"
+            ]
+        },
+        {
+            "id": "p29",
+            "name": "Top Ramen (70g)",
+            "category": "Instant Noodles",
+            "brand": "Top Ramen",
+            "price": 12,
+            "in_stock": true,
+            "attributes": [
+                "veg_only"
+            ]
+        },
+        {
+            "id": "p30",
+            "name": "Kissan Tomato Ketchup (500g)",
+            "category": "Ketchup",
+            "brand": "Kissan",
+            "price": 80,
+            "in_stock": true,
+            "attributes": [
+                "veg_only"
+            ]
+        },
+        {
+            "id": "p31",
+            "name": "Maggi Tomato Ketchup (500g)",
+            "category": "Ketchup",
+            "brand": "Maggi",
+            "price": 75,
+            "in_stock": true,
+            "attributes": [
+                "veg_only"
+            ]
+        },
+        {
+            "id": "p32",
+            "name": "Veeba Mayonnaise (250g)",
+            "category": "Mayonnaise",
+            "brand": "Veeba",
+            "price": 90,
+            "in_stock": false,
+            "attributes": [
+                "veg_only"
+            ]
+        },
+        {
+            "id": "p33",
+            "name": "Funfoods Mayonnaise (250g)",
+            "category": "Mayonnaise",
+            "brand": "Funfoods",
+            "price": 85,
+            "in_stock": true,
+            "attributes": [
+                "veg_only"
+            ]
+        },
+        {
+            "id": "p34",
+            "name": "Britannia Good Day (100g)",
+            "category": "Biscuits",
+            "brand": "Britannia",
+            "price": 30,
+            "in_stock": true,
+            "attributes": [
+                "veg_only"
+            ]
+        },
+        {
+            "id": "p35",
+            "name": "Parle-G (100g)",
+            "category": "Biscuits",
+            "brand": "Parle",
+            "price": 10,
+            "in_stock": true,
+            "attributes": [
+                "veg_only"
+            ]
+        },
+        {
+            "id": "p36",
+            "name": "Oreo Cookies (120g)",
+            "category": "Biscuits",
+            "brand": "Cadbury",
+            "price": 30,
+            "in_stock": false,
+            "attributes": [
+                "veg_only"
+            ]
+        },
+        {
+            "id": "p37",
+            "name": "Sunfeast Dark Fantasy (100g)",
+            "category": "Biscuits",
+            "brand": "Sunfeast",
+            "price": 40,
+            "in_stock": true,
+            "attributes": [
+                "veg_only"
+            ]
+        },
+        {
+            "id": "p38",
+            "name": "Tata Tea Gold (500g)",
+            "category": "Tea",
+            "brand": "Tata",
+            "price": 200,
+            "in_stock": true,
+            "attributes": [
+                "veg_only"
+            ]
+        },
+        {
+            "id": "p39",
+            "name": "Red Label Tea (500g)",
+            "category": "Tea",
+            "brand": "Brooke Bond",
+            "price": 190,
+            "in_stock": true,
+            "attributes": [
+                "veg_only"
+            ]
+        },
+        {
+            "id": "p40",
+            "name": "Nescafe Classic Coffee (50g)",
+            "category": "Coffee",
+            "brand": "Nescafe",
+            "price": 150,
+            "in_stock": true,
+            "attributes": [
+                "veg_only"
+            ]
+        },
+        {
+            "id": "p41",
+            "name": "Bru Instant Coffee (50g)",
+            "category": "Coffee",
+            "brand": "Bru",
+            "price": 140,
+            "in_stock": false,
+            "attributes": [
+                "veg_only"
+            ]
+        },
+        {
+            "id": "p42",
+            "name": "Tata Salt (1kg)",
+            "category": "Salt",
+            "brand": "Tata",
+            "price": 20,
+            "in_stock": true,
+            "attributes": [
+                "veg_only"
+            ]
+        },
+        {
+            "id": "p43",
+            "name": "Catch Salt (1kg)",
+            "category": "Salt",
+            "brand": "Catch",
+            "price": 18,
+            "in_stock": true,
+            "attributes": [
+                "veg_only"
+            ]
+        },
+        {
+            "id": "p44",
+            "name": "Everest Garam Masala (100g)",
+            "category": "Spices",
+            "brand": "Everest",
+            "price": 80,
+            "in_stock": true,
+            "attributes": [
+                "veg_only"
+            ]
+        },
+        {
+            "id": "p45",
+            "name": "MDH Garam Masala (100g)",
+            "category": "Spices",
+            "brand": "MDH",
+            "price": 75,
+            "in_stock": true,
+            "attributes": [
+                "veg_only"
+            ]
+        },
+        {
+            "id": "p46",
+            "name": "Fortune Sunflower Oil (1L)",
+            "category": "Cooking Oil",
+            "brand": "Fortune",
+            "price": 150,
+            "in_stock": true,
+            "attributes": [
+                "veg_only"
+            ]
+        },
+        {
+            "id": "p47",
+            "name": "Saffola Gold Oil (1L)",
+            "category": "Cooking Oil",
+            "brand": "Saffola",
+            "price": 180,
+            "in_stock": false,
+            "attributes": [
+                "veg_only"
+            ]
+        },
+        {
+            "id": "p48",
+            "name": "Sundrop Oil (1L)",
+            "category": "Cooking Oil",
+            "brand": "Sundrop",
+            "price": 145,
+            "in_stock": true,
+            "attributes": [
+                "veg_only"
+            ]
+        },
+        {
+            "id": "p49",
+            "name": "Toor Dal (1kg)",
+            "category": "Pulses",
+            "brand": "Generic",
+            "price": 120,
+            "in_stock": true,
+            "attributes": [
+                "veg_only",
+                "gluten_free"
+            ]
+        },
+        {
+            "id": "p50",
+            "name": "Moong Dal (1kg)",
+            "category": "Pulses",
+            "brand": "Generic",
+            "price": 110,
+            "in_stock": true,
+            "attributes": [
+                "veg_only",
+                "gluten_free"
+            ]
+        }
+    ],
+    "category_hierarchy": {
+        "Dairy": [
+            "Milk",
+            "Plant-Based Milk",
+            "Butter",
+            "Cheese",
+            "Curd"
+        ],
+        "Beverages": [
+            "Soft Drinks",
+            "Juice",
+            "Tea",
+            "Coffee"
+        ],
+        "Snacks": [
+            "Chips",
+            "Namkeen",
+            "Biscuits"
+        ],
+        "Grains": [
+            "Rice",
+            "Flour",
+            "Pulses"
+        ],
+        "Instant Food": [
+            "Instant Noodles"
+        ],
+        "Condiments": [
+            "Ketchup",
+            "Mayonnaise",
+            "Spices",
+            "Salt",
+            "Cooking Oil"
+        ]
+    },
+    "similar_categories": [
+        [
+            "Milk",
+            "Plant-Based Milk"
+        ],
+        [
+            "Chips",
+            "Namkeen"
+        ],
+        [
+            "Soft Drinks",
+            "Juice"
+        ],
+        [
+            "Tea",
+            "Coffee"
+        ],
+        [
+            "Ketchup",
+            "Mayonnaise"
+        ]
+    ]
+}
